@@ -8,7 +8,10 @@ import java.util.stream.IntStream;
 public class FilterList {
 
 	/**
-	 * {@link http://stackoverflow.com/questions/31808893/filter-elements-from-a-list-based-on-another-list}
+	 * {@link http
+	 * ://stackoverflow.com/questions/31808893/filter-elements-from-a-
+	 * list-based-on-another-list}
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
@@ -19,9 +22,5 @@ public class FilterList {
 				.filter(i -> boolList.get(i)).mapToObj(i -> intList.get(i))
 				.collect(Collectors.toList());
 		System.out.println(collect);
-		
-		
-		
 	}
-
 }
