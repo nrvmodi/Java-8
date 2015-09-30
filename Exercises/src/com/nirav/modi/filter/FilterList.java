@@ -21,6 +21,13 @@ public class FilterList {
 		List<Integer> collect = IntStream.range(0, intList.size())
 				.filter(i -> boolList.get(i)).mapToObj(i -> intList.get(i))
 				.collect(Collectors.toList());
+
+		List<Integer> list = IntStream.range(0, intList.size())
+				.filter(i -> !boolList.get(i)).mapToObj(i -> intList.get(i))
+				.collect(Collectors.toList());
+		
+		System.out.println(list);
+
 		System.out.println(collect);
 	}
 }
